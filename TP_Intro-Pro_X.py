@@ -1,3 +1,4 @@
+#TP 10.1
 import os
 def continuar():
         input("\nPresione ENTER para continuar...")
@@ -89,22 +90,7 @@ def main():
 #main()
 
 
-'''
-Se necesita un programa para realizar una comparación de la nota promedio
-entre dos comisiones de la asignatura Introducción a la Programación. Para
-esto, se le debe pedir al usuario que cargue una a una todas las notas de la
-primera comisión, y una vez finalizadas, cargar una a una las de la segunda
-comisión.
-El programa debe informar en pantalla el promedio de cada comisión, y cuál de
-las dos es la comisión con mayor promedio. Tenga en cuenta que no se conoce
-de antemano la cantidad de alumnos de cada comisión, y las comisiones
-pueden tener cantidades diferentes de alumnos.
-Para indicar que ha terminado de cargar las notas de una comisión, el usuario
-debe ingresar el valor -1. Si al ingresar una nota, la misma no es válida (es decir,
-no está entre 1 y 10, y tampoco es -1), se le debe informar del error, y luego
-continuar con la carga de notas normalmente, pero sin contabilizar la nota
-inválida.
-'''
+# TP 10.2
 def promedio(comision_notas, cantidad_notas):
     if cantidad_notas > 0:
         return comision_notas / cantidad_notas
@@ -144,4 +130,4 @@ def int_pro():
     print("El promedio de la comisión 1 es: ", promedio(com1_notas, com1_cant_notas))
     print("El promedio de la comisión 2 es: ", promedio(com2_notas, com2_cant_notas))
 
-int_pro()
+#int_pro()
